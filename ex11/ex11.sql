@@ -1,0 +1,1 @@
+select Ucase(`fiche_personne`.`nom`) as 'NOM', `fiche_personne`.`prenom` as 'prenom', `abonnement`.`prix`  as 'prix' from `membre` Inner join `fiche_personne` on `membre`.`id_fiche_perso` = `fiche_personne`.`id_perso` INNER JOIN `abonnement` on `abonnement`.`id_abo` = `membre`.`id_abo` where `abonnement`.`prix` > 42 order by `fiche_personne`.`nom`, `fiche_personne`.`prenom`;
