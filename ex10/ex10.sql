@@ -1,1 +1,1 @@
-select `titre` as 'Titre', `resum` as 'Resume' , `annee_prod` from film INNER JOIN `genre` on genre.`id_genre` = film.`id_genre` where genre.`nom` = 'erotic' order by `annee_prod` desc;
+select `titre` as 'Titre', `resum` as 'Resume' , `annee_prod` from `db_tmanet`.`film` INNER JOIN `db_tmanet`.`genre` on genre.`id_genre` = film.`id_genre` where genre.`nom` = 'erotic' order by `annee_prod` desc;
